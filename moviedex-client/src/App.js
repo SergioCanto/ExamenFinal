@@ -51,9 +51,11 @@ class App extends React.Component {
         <div>
         {this.state.movies.map((movie,index) => {
           return (
+            <div>
             <Movie accion={movie.film_title} test={index} />
             <Movie accion={movie.year} test={index} />
             <Movie accion={movie.rating} test={index} />
+            </div>
           )
         })}
         </div>
